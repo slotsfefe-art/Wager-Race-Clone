@@ -14,16 +14,16 @@ interface Player {
 }
 
 const PLAYERS: Player[] = [
-  { id: 1,  maskedName: "S*****",  baseWager: 250000, hourlyGain: 500, prize: "$5,000" },
-  { id: 2,  maskedName: "M*****",  baseWager: 151000, hourlyGain: 500, prize: "$2,500" },
-  { id: 3,  maskedName: "R*****",  baseWager: 98500,  hourlyGain: 500, prize: "$1,000" },
-  { id: 4,  maskedName: "D*****",  baseWager: 74200,  hourlyGain: 75,  prize: "$500" },
-  { id: 5,  maskedName: "J*****",  baseWager: 58900,  hourlyGain: 60,  prize: "$300" },
-  { id: 6,  maskedName: "A*****",  baseWager: 41300,  hourlyGain: 50,  prize: "$200" },
-  { id: 7,  maskedName: "K*****",  baseWager: 29700,  hourlyGain: 45,  prize: "$150" },
-  { id: 8,  maskedName: "T*****",  baseWager: 18600,  hourlyGain: 40,  prize: "$100" },
-  { id: 9,  maskedName: "C*****",  baseWager: 11200,  hourlyGain: 35,  prize: "$75" },
-  { id: 10, maskedName: "L*****",  baseWager: 5800,   hourlyGain: 30,  prize: "$50" },
+  { id: 1,  maskedName: "S*****",  baseWager: 247318, hourlyGain: 500, prize: "$5,000" },
+  { id: 2,  maskedName: "M*****",  baseWager: 149762, hourlyGain: 500, prize: "$2,500" },
+  { id: 3,  maskedName: "R*****",  baseWager: 96841,  hourlyGain: 500, prize: "$1,000" },
+  { id: 4,  maskedName: "D*****",  baseWager: 73455,  hourlyGain: 75,  prize: "$500" },
+  { id: 5,  maskedName: "J*****",  baseWager: 57923,  hourlyGain: 60,  prize: "$300" },
+  { id: 6,  maskedName: "A*****",  baseWager: 40187,  hourlyGain: 50,  prize: "$200" },
+  { id: 7,  maskedName: "K*****",  baseWager: 28634,  hourlyGain: 45,  prize: "$150" },
+  { id: 8,  maskedName: "T*****",  baseWager: 17291,  hourlyGain: 40,  prize: "$100" },
+  { id: 9,  maskedName: "C*****",  baseWager: 10847,  hourlyGain: 35,  prize: "$75" },
+  { id: 10, maskedName: "L*****",  baseWager: 5463,   hourlyGain: 30,  prize: "$50" },
 ];
 
 const START_TIME = Date.now();
