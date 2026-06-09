@@ -143,7 +143,7 @@ export default function WagerRace() {
             <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path d="M8 6H21M8 12H21M8 18H21M3 6h.01M3 12h.01M3 18h.01"/>
             </svg>
-            Clasificación
+            Leaderboard
           </button>
           <a
             href={KICK_URL}
@@ -155,7 +155,7 @@ export default function WagerRace() {
             <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
               <path d="M4 2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm2 5v10h2v-4l4 4h3l-5-5 5-5h-3l-4 4V7H6z"/>
             </svg>
-            Canal de Kick
+            Kick Channel
           </a>
           <a
             href={CASINO_URL}
@@ -183,7 +183,7 @@ export default function WagerRace() {
           <div className="wr-hero-prize">{totalPrize}</div>
           <h1 className="wr-hero-title">LEADERBOARD</h1>
           <p className="wr-hero-sub">
-            ASEGÚRATE DE USAR EL CÓDIGO{" "}
+            MAKE SURE YOU'RE USING CODE{" "}
             <a href={CASINO_URL} target="_blank" rel="noopener noreferrer" className="wr-code">
               "{REFERRAL_CODE}"
             </a>
@@ -202,7 +202,7 @@ export default function WagerRace() {
                     <AvatarIcon rank={rank} />
                   </div>
                   <div className="wr-podium-name">{player.maskedName}</div>
-                  <div className="wr-podium-label">TOTAL APOSTADO</div>
+                  <div className="wr-podium-label">TOTAL WAGERED</div>
                   <div className="wr-podium-wager">{formatUSD(player.wager)}</div>
                   <div className="wr-podium-diamond">♦</div>
                   <div className="wr-podium-prize">{player.prize}</div>
@@ -214,14 +214,14 @@ export default function WagerRace() {
 
         <div className="wr-countdown-wrap">
           <div className="wr-countdown-icon">♦</div>
-          <h2 className="wr-month-title">WAGER RACE — 30 DÍAS</h2>
-          <p className="wr-month-sub">El leaderboard se reinicia al finalizar el período. Vuelve a revisar tu posición.</p>
+          <h2 className="wr-month-title">WAGER RACE — 30 DAYS</h2>
+          <p className="wr-month-sub">The leaderboard resets at the end of the period. Check back regularly to see your placement.</p>
           <div className="wr-countdown-row">
             {[
-              { val: countdown.days,  label: "DÍAS" },
+              { val: countdown.days,  label: "DAYS" },
               { val: countdown.hours, label: "HRS" },
-              { val: countdown.mins,  label: "MIN" },
-              { val: countdown.secs,  label: "SEG" },
+              { val: countdown.mins,  label: "MINS" },
+              { val: countdown.secs,  label: "SECS" },
             ].map(({ val, label }, i) => (
               <div key={label} className="wr-cd-item">
                 <span className="wr-cd-val">{String(val).padStart(2, "0")}</span>
@@ -239,7 +239,7 @@ export default function WagerRace() {
             </svg>
             <input
               className="wr-search"
-              placeholder="Buscar usuario..."
+              placeholder="Search username..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -248,10 +248,10 @@ export default function WagerRace() {
           <table className="wr-table">
             <thead>
               <tr>
-                <th>LUGAR</th>
-                <th>USUARIO</th>
-                <th>APOSTADO</th>
-                <th>PREMIO</th>
+                <th>PLACE</th>
+                <th>USERNAME</th>
+                <th>WAGERED</th>
+                <th>PRIZE</th>
               </tr>
             </thead>
             <tbody>
@@ -271,7 +271,7 @@ export default function WagerRace() {
         </div>
 
         <footer className="wr-footer">
-          <span>© 2025 Veinker · Juega responsablemente · +18</span>
+          <span>© 2025 Veinker · Gamble responsibly · +18</span>
           <a href={CASINO_URL} target="_blank" rel="noopener noreferrer">
             stake.com/?c=Veinker1
           </a>
