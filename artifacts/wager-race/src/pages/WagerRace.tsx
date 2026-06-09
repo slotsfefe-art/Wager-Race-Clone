@@ -185,7 +185,7 @@ export default function WagerRace() {
           <div className="wr-hero-prize">{totalPrize}</div>
           <h1 className="wr-hero-title">LEADERBOARD</h1>
           <p className="wr-hero-sub">
-            ASEGURATE DE USAR EL CÓDIGO{" "}
+            MAKE SURE YOU'RE USING CODE{" "}
             <a href={CASINO_URL} target="_blank" rel="noopener noreferrer" className="wr-code">
               "{REFERRAL_CODE}"
             </a>
@@ -216,8 +216,8 @@ export default function WagerRace() {
 
         <div className="wr-countdown-wrap">
           <div className="wr-countdown-icon">♦</div>
-          <h2 className="wr-month-title">WAGER RACE — 30 DÍAS</h2>
-          <p className="wr-month-sub">El leaderboard se reinicia al terminar el período. Vuelve a revisar tu posición.</p>
+          <h2 className="wr-month-title">WAGER RACE — 30 DAYS</h2>
+          <p className="wr-month-sub">The leaderboard resets at the end of the period. Check back regularly to see your placement.</p>
           <div className="wr-countdown-row">
             {[
               { val: countdown.days,  label: "DAYS" },
@@ -241,7 +241,7 @@ export default function WagerRace() {
             </svg>
             <input
               className="wr-search"
-              placeholder="Buscar usuario..."
+              placeholder="Search username..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -250,10 +250,10 @@ export default function WagerRace() {
           <table className="wr-table">
             <thead>
               <tr>
-                <th>LUGAR</th>
-                <th>USUARIO</th>
+                <th>PLACE</th>
+                <th>USERNAME</th>
                 <th>WAGERED</th>
-                <th>PREMIO</th>
+                <th>PRIZE</th>
               </tr>
             </thead>
             <tbody>
@@ -273,7 +273,7 @@ export default function WagerRace() {
         </div>
 
         <footer className="wr-footer">
-          <span>© 2025 Veinker · Juega responsablemente · +18</span>
+          <span>© 2025 Veinker · Gamble responsibly · +18</span>
           <a href={CASINO_URL} target="_blank" rel="noopener noreferrer">
             stake.com/?c=Veinker1
           </a>
