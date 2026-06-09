@@ -112,7 +112,7 @@ export default function WagerRace() {
   const podium = [top3[1], top3[0], top3[2]];
   const podiumRanks = [2, 1, 3];
 
-  const totalPrize = "$9,875";
+  const totalPrize = "$10,000";
 
   return (
     <div className="wr-root">
@@ -130,7 +130,7 @@ export default function WagerRace() {
       <aside className="wr-sidebar">
         <div className="wr-profile">
           <div className="wr-avatar-wrap">
-            <img src="/veinker-logo.png" alt="Veinker" className="wr-avatar" />
+            <img src="/veinker-avatar.png" alt="Veinker" className="wr-avatar" />
             <span className="wr-avatar-dot" />
           </div>
           <div className="wr-profile-name">Veinker</div>
