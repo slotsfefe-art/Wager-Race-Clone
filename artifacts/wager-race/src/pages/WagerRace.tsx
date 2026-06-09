@@ -183,7 +183,7 @@ export default function WagerRace() {
           <div className="wr-hero-prize">{totalPrize}</div>
           <h1 className="wr-hero-title">LEADERBOARD</h1>
           <p className="wr-hero-sub">
-            MAKE SURE YOU'RE USING CODE{" "}
+            ASEGÚRATE DE USAR EL CÓDIGO{" "}
             <a href={CASINO_URL} target="_blank" rel="noopener noreferrer" className="wr-code">
               "{REFERRAL_CODE}"
             </a>
