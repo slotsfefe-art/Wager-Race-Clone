@@ -270,6 +270,27 @@ export default function WagerRace() {
           </table>
         </div>
 
+        <section className="wr-last-cycle">
+          <div className="wr-last-header">
+            <span className="wr-last-badge">LAST CYCLE</span>
+            <h3 className="wr-last-title">May 2025 Winners</h3>
+          </div>
+          <div className="wr-last-grid">
+            {[
+              { rank: 1, name: "P*****", wagered: "$312,847.92", prize: "$5,000", color: "#f59e0b" },
+              { rank: 2, name: "A*****", wagered: "$198,523.41", prize: "$2,500", color: "#94a3b8" },
+              { rank: 3, name: "N*****", wagered: "$134,091.67", prize: "$1,000", color: "#f97316" },
+            ].map((w) => (
+              <div key={w.rank} className="wr-last-card">
+                <span className="wr-last-rank" style={{ color: w.color }}>#{w.rank}</span>
+                <span className="wr-last-name">{w.name}</span>
+                <span className="wr-last-wagered">{w.wagered}</span>
+                <span className="wr-last-prize" style={{ color: w.color }}>{w.prize}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
         <footer className="wr-footer">
           <span>© 2025 Veinker · Gamble responsibly · +18</span>
           <a href={CASINO_URL} target="_blank" rel="noopener noreferrer">
