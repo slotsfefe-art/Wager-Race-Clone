@@ -270,6 +270,46 @@ export default function WagerRace() {
           </table>
         </div>
 
+        <section className="wr-how-to">
+          <div className="wr-how-header">
+            <h3 className="wr-how-title">HOW TO JOIN</h3>
+            <p className="wr-how-sub">3 simple steps to compete for prizes</p>
+          </div>
+          <div className="wr-how-steps">
+            {[
+              {
+                num: "01",
+                title: "Register on Stake",
+                desc: 'Create your account at stake.com using the referral code "Veinker1" to be eligible.',
+                icon: "🎰",
+              },
+              {
+                num: "02",
+                title: "Place Your Bets",
+                desc: "Wager on any slots or casino games. Every dollar wagered counts toward your position on the leaderboard.",
+                icon: "♠",
+              },
+              {
+                num: "03",
+                title: "Climb & Win",
+                desc: "The top 10 players with the highest total wager at the end of the cycle win cash prizes.",
+                icon: "🏆",
+              },
+            ].map((step) => (
+              <div key={step.num} className="wr-how-card">
+                <div className="wr-how-num">{step.num}</div>
+                <div className="wr-how-icon">{step.icon}</div>
+                <h4 className="wr-how-card-title">{step.title}</h4>
+                <p className="wr-how-card-desc">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+          <a href={CASINO_URL} target="_blank" rel="noopener noreferrer" className="wr-how-cta">
+            Register Now with Code "Veinker1"
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+        </section>
+
         <section className="wr-last-cycle">
           <div className="wr-last-header">
             <span className="wr-last-badge">LAST CYCLE</span>

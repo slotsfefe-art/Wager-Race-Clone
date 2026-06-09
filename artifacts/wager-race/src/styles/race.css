@@ -509,6 +509,122 @@
   color: #38bdf8;
 }
 
+/* ========== HOW TO JOIN ========== */
+.wr-how-to {
+  padding: 0 32px 48px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  border-top: 1px solid rgba(255,255,255,0.04);
+  padding-top: 40px;
+}
+
+.wr-how-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.wr-how-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  letter-spacing: 6px;
+  color: #f1f5f9;
+  margin-bottom: 6px;
+}
+
+.wr-how-sub {
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4b5563;
+  letter-spacing: 0.5px;
+}
+
+.wr-how-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.wr-how-card {
+  background: rgba(13,21,48,0.6);
+  border: 1px solid rgba(56,189,248,0.1);
+  border-radius: 16px;
+  padding: 24px 20px;
+  text-align: center;
+  position: relative;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.wr-how-card:hover {
+  border-color: rgba(56,189,248,0.3);
+  transform: translateY(-3px);
+}
+
+.wr-how-num {
+  position: absolute;
+  top: 16px;
+  left: 18px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: rgba(56,189,248,0.35);
+}
+
+.wr-how-icon {
+  font-size: 32px;
+  margin: 8px 0 14px;
+  display: block;
+}
+
+.wr-how-card-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #e2e8f0;
+  margin-bottom: 10px;
+}
+
+.wr-how-card-desc {
+  font-family: 'Barlow', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.wr-how-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  color: #000;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: fit-content;
+  transition: all 0.2s;
+  box-shadow: 0 0 28px rgba(56,189,248,0.3);
+}
+
+.wr-how-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 44px rgba(56,189,248,0.5);
+}
+
+@media (max-width: 700px) {
+  .wr-how-to { padding: 32px 16px 40px; }
+  .wr-how-steps { grid-template-columns: 1fr; }
+}
+
 /* ========== LAST CYCLE ========== */
 .wr-last-cycle {
   padding: 0 32px 44px;
