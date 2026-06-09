@@ -1,0 +1,9 @@
+{
+  "buildCommand": "pnpm --filter @workspace/wager-race run build",
+  "outputDirectory": "artifacts/wager-race/dist/public",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
