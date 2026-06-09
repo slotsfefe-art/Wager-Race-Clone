@@ -14,25 +14,23 @@ interface Player {
 }
 
 const PLAYERS: Player[] = [
-  { id: 1,  maskedName: "S*****",  baseWager: 250000, hourlyGain: 1800, prize: "$5,000" },
-  { id: 2,  maskedName: "M*****",  baseWager: 151000, hourlyGain: 1400, prize: "$2,500" },
-  { id: 3,  maskedName: "R*****",  baseWager: 98500,  hourlyGain: 1100, prize: "$1,000" },
-  { id: 4,  maskedName: "D*****",  baseWager: 74200,  hourlyGain: 180,  prize: "$500" },
-  { id: 5,  maskedName: "J*****",  baseWager: 58900,  hourlyGain: 160,  prize: "$300" },
-  { id: 6,  maskedName: "A*****",  baseWager: 41300,  hourlyGain: 140,  prize: "$200" },
-  { id: 7,  maskedName: "K*****",  baseWager: 29700,  hourlyGain: 130,  prize: "$150" },
-  { id: 8,  maskedName: "T*****",  baseWager: 18600,  hourlyGain: 120,  prize: "$100" },
-  { id: 9,  maskedName: "C*****",  baseWager: 11200,  hourlyGain: 110,  prize: "$75" },
-  { id: 10, maskedName: "L*****",  baseWager: 5800,   hourlyGain: 100,  prize: "$50" },
+  { id: 1,  maskedName: "S*****",  baseWager: 250000, hourlyGain: 500, prize: "$5,000" },
+  { id: 2,  maskedName: "M*****",  baseWager: 151000, hourlyGain: 500, prize: "$2,500" },
+  { id: 3,  maskedName: "R*****",  baseWager: 98500,  hourlyGain: 500, prize: "$1,000" },
+  { id: 4,  maskedName: "D*****",  baseWager: 74200,  hourlyGain: 75,  prize: "$500" },
+  { id: 5,  maskedName: "J*****",  baseWager: 58900,  hourlyGain: 60,  prize: "$300" },
+  { id: 6,  maskedName: "A*****",  baseWager: 41300,  hourlyGain: 50,  prize: "$200" },
+  { id: 7,  maskedName: "K*****",  baseWager: 29700,  hourlyGain: 45,  prize: "$150" },
+  { id: 8,  maskedName: "T*****",  baseWager: 18600,  hourlyGain: 40,  prize: "$100" },
+  { id: 9,  maskedName: "C*****",  baseWager: 11200,  hourlyGain: 35,  prize: "$75" },
+  { id: 10, maskedName: "L*****",  baseWager: 5800,   hourlyGain: 30,  prize: "$50" },
 ];
 
 const START_TIME = Date.now();
 
 function computeWager(player: Player, now: number): number {
-  const hoursElapsed = (now - START_TIME) / (1000 * 60 * 60);
-  const increment = player.hourlyGain * hoursElapsed;
-  const jitter = Math.sin(player.id * 137.5 + hoursElapsed * 0.3) * player.hourlyGain * 0.12;
-  return Math.round(player.baseWager + increment + jitter);
+  const hoursElapsed = Math.floor((now - START_TIME) / (1000 * 60 * 60));
+  return player.baseWager + player.hourlyGain * hoursElapsed;
 }
 
 function formatUSD(n: number): string {
@@ -95,7 +93,7 @@ export default function WagerRace() {
   const countdown = useCountdown(RACE_END_DATE);
 
   useEffect(() => {
-    const id = setInterval(() => setNow(Date.now()), 4000);
+    const id = setInterval(() => setNow(Date.now()), 60_000);
     return () => clearInterval(id);
   }, []);
 
